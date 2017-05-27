@@ -1,0 +1,29 @@
+{
+    "name": "jnvsor/composite-matcher",
+    "description": "A composite matcher that runs RequestMatchers in sequence to find a match",
+    "type": "library",
+    "require": {
+        "php": ">= 5.4",
+        "symfony/routing": "^2.1 || ^3.0",
+        "symfony/http-foundation": "^2.0 || ^3.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "phpunit/phpunit": "^5.0"
+    },
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Jonathan Vollebregt",
+            "email": "jnvsor@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CompositeMatcher\\": "src/"
+        }
+    },
+    "scripts": {
+        "format": "php-cs-fixer fix"
+    }
+}
